@@ -69,9 +69,7 @@ def mse_loss(batch, result):
 optimizer = Adam(model.parameters(), lr=1e-2)
 
 
-# before setting up the trainer, remove previous training checkpoints and logs
-
-## AFter your first run figure out how to remove checkpoint and log file
+# You must delete previous training if you want to restart the training!
 
 import schnetpack.train as trn
 
