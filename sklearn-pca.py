@@ -5,6 +5,10 @@
 # and covariance matrix. 
 
 #import libraries
+<<<<<<< HEAD
+=======
+#hello
+>>>>>>> 751462a70363d500874a412fa99a65338697ba1a
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,7 +43,11 @@ plt.ylabel('Second principal component')
 
 
 cov = pca.get_covariance()
+<<<<<<< HEAD
 #print(cov)
+=======
+print(cov)
+>>>>>>> 751462a70363d500874a412fa99a65338697ba1a
 # optional print covariance and associated eigenvectors
 #print('covariance')
 #print(cov)
@@ -48,7 +56,10 @@ cov = pca.get_covariance()
 
 import scipy.linalg as la
 eig, ev = la.eig(cov)
+<<<<<<< HEAD
 print(eig)
+=======
+>>>>>>> 751462a70363d500874a412fa99a65338697ba1a
 #print('all eigenvalues')
 #print(eig) 
 #print(ev[:,0])
