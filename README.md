@@ -13,6 +13,6 @@ training-schnet-qm9-30-30-20-05-04:
 trained-schnet-qm9-30-30-20-05-04:
         this script loads the best model saved after a training script is run.          
 
-sklearn-pca" 
+sklearn-pca: 
         PCA script for dimensional reduction, input MUST be in .csv file (save excel as .csv)
 
