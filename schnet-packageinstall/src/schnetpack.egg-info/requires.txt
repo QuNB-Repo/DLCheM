@@ -1,0 +1,12 @@
+torch>=1.1
+numpy
+ase>=3.18
+h5py
+tensorboardX
+tqdm
+pyyaml
+
+[test]
+pytest
+sacred
+pytest-console-scripts

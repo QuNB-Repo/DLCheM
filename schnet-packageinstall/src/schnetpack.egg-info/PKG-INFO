@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: schnetpack
+Version: 0.3.1
+Summary: SchNetPack - Deep Neural Networks for Atomistic Systems
+Home-page: https://github.com/atomistic-machine-learning/schnetpack
+Author: Kristof T. Schuett, Michael Gastegger, Pan Kessel, Kim Nicoli
+License: MIT
+Description: 
+                SchNetPack aims to provide accessible atomistic neural networks that can be
+                trained and applied out-of-the-box, while still being extensible to custom 
+                atomistic architectures
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
