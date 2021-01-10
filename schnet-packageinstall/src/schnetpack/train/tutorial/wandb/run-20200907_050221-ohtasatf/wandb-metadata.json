@@ -1,0 +1,23 @@
+{
+    "root": "/home/amerelsamman/Programs/schnet/src/schnetpack/train/tutorial",
+    "program": "tutorial.py",
+    "git": {
+        "remote": "http://github.com/wandb/tutorial",
+        "commit": "b8e2781f48eb972f8a55e807ea2a4b5cfb70de62"
+    },
+    "email": null,
+    "startedAt": "2020-09-07T08:02:21.983447",
+    "host": "AmerEl",
+    "username": "amerelsamman",
+    "executable": "/home/amerelsamman/Programs/anaconda3/bin/python",
+    "os": "Linux-5.4.0-45-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.6",
+    "cpu_count": 6,
+    "args": [],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "project": "sample-project",
+    "heartbeatAt": "2020-09-07T08:02:48.926117",
+    "exitcode": 0
+}
