@@ -25,19 +25,19 @@ deactivate
 
 ## Users: running notebooks
 
-Load the Python module and the virtual environment
+Load the Python module and the virtual environment on a **login node**
 
 ```
 module load python/3.7
 source ~/projects/def-stijn/envs/dlchem/bin/activate
 ```
 
-Submit an interactive job with the required resources
+Then submit an interactive job with the required resources
 ```
 salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun ~/projects/def-stijn/envs/dlchem/bin/notebook.sh
 ```
 
-Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel locally
+Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel **locally**
 ```
 sshuttle --dns -Nr <username>@<cluster>.computecanada.ca
 ```
