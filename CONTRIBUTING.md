@@ -2,42 +2,49 @@
 
 **Login nodes** have access to the internet; **compute nodes** don't. That is why we adopt a two-stage process.
 
-## Admin: installation
+## Install the required dependencies in a virtual environment
 
-Create a [virtual environment](https://docs.computecanada.ca/wiki/Python) in our [shared envs](https://docs.computecanada.ca/wiki/Sharing_data)
+The following **one-time** installation creates a virtual environment that contains all dependencies and can be used in compute jobs. 
+
+1. Create a [virtual environment](https://docs.computecanada.ca/wiki/Python) in your home directory
 
 ```
-mkdir ~/projects/def-stijn/envs/dlchem/
+mkdir -p ~/envs/dlchem
 module load python/3.7
-virtualenv --no-download ~/projects/def-stijn/envs/dlchem/
+virtualenv --no-download ~/envs/dlchem/
 ```
 
-Install the necessary libraries into that virtual environment
+2. Install the necessary libraries and [Jupyter scripts](https://docs.computecanada.ca/wiki/Jupyter) into that virtual environment
 
 ```
-source ~/projects/def-stijn/envs/dlchem/bin/activate
+source ~/envs/dlchem/bin/activate
 pip install --no-index torch ase tensorboardX h5py tqdm pytest
 pip install schnetpack jupyter
-echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip $(hostname -f) --no-browser' > ~/projects/def-stijn/envs/dlchem/bin/notebook.sh
-chmod ug+x ~/projects/def-stijn/envs/dlchem/bin/notebook.sh
+echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip $(hostname -f) --no-browser' > ~/envs/dlchem/bin/notebook.sh
+chmod u+x ~/envs/dlchem/bin/notebook.sh
 deactivate
 ```
 
-## Users: running notebooks
+## Running notebooks
 
-Load the Python module and the virtual environment on a **login node**
+After you have installed your virtual environment, you can use this environment to run notebooks. 
+
+1. On a **login node**, navigate to the directory that contains your notebooks and load the virtual environment
 
 ```
+cd ${directory containing notebooks}
 module load python/3.7
-source ~/projects/def-stijn/envs/dlchem/bin/activate
+source ~/envs/dlchem/bin/activate
 ```
 
-Then submit an interactive job with the required resources
+2. Submit an [interactive job](https://docs.computecanada.ca/wiki/Running_jobs) with the required resources 
+
 ```
-salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun ~/projects/def-stijn/envs/dlchem/bin/notebook.sh
+salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun source ~/envs/dlchem/bin/notebook.sh
 ```
 
-Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel **locally**
+3. Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel **locally**
+
 ```
 sshuttle --dns -Nr <username>@<cluster>.computecanada.ca
 ```
