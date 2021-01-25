@@ -21,7 +21,7 @@ source ~/envs/dlchem/bin/activate
 pip install --no-index torch ase tensorboardX h5py tqdm pytest
 pip install schnetpack jupyter
 echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip $(hostname -f) --no-browser' > ~/envs/dlchem/bin/notebook.sh
-chmod u+x ~/envs/dlchem/bin/notebook.sh
+chmod ug+x ~/envs/dlchem/bin/notebook.sh
 deactivate
 ```
 
@@ -40,7 +40,7 @@ source ~/envs/dlchem/bin/activate
 2. Submit an [interactive job](https://docs.computecanada.ca/wiki/Running_jobs) with the required resources 
 
 ```
-salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun source ~/envs/dlchem/bin/notebook.sh
+salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun ~/envs/dlchem/bin/notebook.sh
 ```
 
 3. Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel **locally**

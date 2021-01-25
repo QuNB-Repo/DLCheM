@@ -1,2 +1,2 @@
 qm9.db
-.ipynb_checkpoints/
+*.ipynb_checkpoints*
