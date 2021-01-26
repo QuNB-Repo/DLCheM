@@ -40,7 +40,7 @@ source ~/envs/dlchem/bin/activate
 2. Submit an [interactive job](https://docs.computecanada.ca/wiki/Running_jobs) with the required resources 
 
 ```
-salloc --time=1:0:0 --ntasks=1 --cpus-per-task=2 --mem-per-cpu=1024M --account=def-stijn srun ~/envs/dlchem/bin/notebook.sh
+salloc --time=1:0:0 --nodes=1 --gres=gpu:1 --ntasks=1 --cpus-per-task=16 --mem-per-cpu=4G --account=def-stijn srun ~/envs/dlchem/bin/notebook.sh
 ```
 
 3. Following the `Connecting to Jupyter Notebook` instructions in the [Compute Canada Wiki](https://docs.computecanada.ca/wiki/Jupyter), create an SSH tunnel **locally**
