@@ -19,6 +19,7 @@ schnet_project --> directory for work in investigating the interpretability of s
 	schnet-package-install 
 	trained_models - folder which saves all the trained_models after training is done
 
-bpy-battery_project --> work in searching for optimal bpy battery properties using machine learning algorithms
+bpy-battery_project --> work in searching for optimal bpy battery properties using machine learning algorithms. 			within this folder you will find: 
+
 	autocombinatorial - folder containing the script for autocombinatorial generation of new bpy molecules 
-	SMILES-RNN - working on understanding SMILES representations in ML algorithms
+	SMILES-RNN -        working on understanding SMILES representations in ML algorithms
