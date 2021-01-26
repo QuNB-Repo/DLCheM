@@ -12,6 +12,7 @@ Before starting, please review the [contribution guidelines](CONTRIBUTING.md).
 This README file keeps information on all DLChem projects and presentations
 
 schnet_project --> directory for work in investigating the interpretability of schnet algorithm using statistical techniques such as principle component analysis (PCA). Within this directory you will find: 
+
 	notebooks - folder of jupyter files for running schnet training script, load trained model, and sklearn PCA   
 	            script.
 	pca -       folder containing all PCA results for the many trained models 
