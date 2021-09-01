@@ -52,6 +52,7 @@ def pearson(element,file_path,label_path,scale_data,n_components,dimension):
 
     data = genfromtxt(file_path,delimiter=',')
     
+    print(data)
     if scale_data == True:
         scaler = StandardScaler()
         scaler.fit(data)
@@ -68,7 +69,6 @@ def pearson(element,file_path,label_path,scale_data,n_components,dimension):
 
     eig, ev = la.eig(cov)
     eig = eig.real 
-    print(eig)
     
     stdev = statistics.stdev(data[1])
 
@@ -79,32 +79,22 @@ def pearson(element,file_path,label_path,scale_data,n_components,dimension):
             stdevx = statistics.stdev(data[i])
             stdevy = statistics.stdev(data[j])
             pearson[i][j]=cov[i][j]/(stdevx*stdevy)
-        
-
-    print(pearson[0])
     
-    pca_file = '../../../data/pca/%s.csv' %(str(number_data)+name_data + element)
-    savetxt(pca_file, x_pca, delimiter=',')
+    print(pearson)    
+    savetxt('../../../data/pca/'+name_data+'pca.csv',x_pca,delimiter=',')
+#    pearson_sums = np.zeros((30))
+#    for i in range(30):
+#        squ = pearson[j][0]**2
+#        for j in range(1,30):
+#            pearson_sums[i] = squ + pearson[i][j]**2
     
-    #-1 from pca file
-    #propanol-ethanol
-    diff1 = x_pca[173]-x_pca[51]
+#    print(pearson_sums)
     
-    #ethanol - methanol
-    diff2 = x_pca[51]-x_pca[23]
-    
-    index1 = np.argmax(diff1)
-    index2 = np.argmax(diff2)
-    print(index1)
-    print(index2)
-
-    
-    
-element = 'H'
-name_data='int0'
+element = 'O'
+name_data='rep-5000-model1H-quint'
 number_data=5000
-file_path = '../../../data/schnet/5000/' + name_data + '%s.csv' %(element)
-label_path = '../../../data/label_qm9/%s/5000/label%s.csv' %(element,element) 
+file_path = '../../../data/schnet/' + name_data + '.csv' 
+label_path = '../../../data/label_qm9/%s/label%s5000.csv' %(element,element) 
 scale_data = True
 n_components=30
 dimension=2

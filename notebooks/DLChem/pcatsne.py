@@ -199,9 +199,9 @@ def pca(element,file_path,label_path,scale_data,n_components,dimension):
      
 
 element = 'N'
-name_data='int0'
+name_data='rep-0'
 number_data=5000
-file_path = '../../../data/schnet/5000/' + name_data + '%s.csv' %(element)
+file_path = '../../../data/schnet/5000-mod/' + name_data + '%s.csv' %(element)
 label_path = '../../../data/label_qm9/%s/5000/label%s.csv' %(element,element) 
 scale_data = True
 n_components=30
