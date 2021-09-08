@@ -44,9 +44,17 @@ touch ~/.ssh/authorized_keys
 
 Submit an interactive job
 
+
 ```bash
-salloc --time=1:00:00 --cpus-per-task=10 --mem=46GB --gres=gpu:rtx6000:1 --partition=all_gpus
+salloc --time=1:00:00 --cpus-per-task=10 --mem=46GB --gres=gpu:rtx6000:1 
+--account=ctb-stijn(or def-stijn) --partition=all_gpus
 ```
+note that if you choose ctb-stijn account you are limited to 80 cores 
+and 6 gpus but have much higher priority and can run for up to 72 hours
+
+if you choose def-stijn you are no longer restricted to run only 80 
+cores and 6 gpus, but you will have lower priority and can run up to 24 
+hours
 
 load the needed modules when your job has started
 
@@ -74,3 +82,18 @@ torch.cuda.get_device_name()
 
 The last command should return `'Quadro RTX 6000'`.
 
+Again, as before, to make jupyter notebook executible, run:
+
+```bash
+echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip 
+$(hostname -f) --no-browser' > ~/slurm/env/bin/notebook.sh
+```
+now you are ready to run the executable
+
+```
+chmod u+x ~/slurm/env/bin/notebook.sh
+```
+
+now you can run using:
+
+srun ~/slurm/env/bin/notebook.sh
