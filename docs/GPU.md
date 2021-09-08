@@ -87,10 +87,6 @@ Again, as before, to make jupyter notebook executible, run:
 ```bash
 echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip 
 $(hostname -f) --no-browser' > ~/slurm/env/bin/notebook.sh
-```
-now you are ready to run the executable
-
-```
 chmod u+x ~/slurm/env/bin/notebook.sh
 ```
 
