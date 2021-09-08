@@ -96,4 +96,6 @@ chmod u+x ~/slurm/env/bin/notebook.sh
 
 now you can run using:
 
+'''
 srun ~/slurm/env/bin/notebook.sh
+'''
