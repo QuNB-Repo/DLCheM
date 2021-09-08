@@ -82,7 +82,7 @@ torch.cuda.get_device_name()
 
 The last command should return `'Quadro RTX 6000'`.
 
-Again, as before, to make jupyter notebook executible, run:
+Again, as before, to make jupyter notebook executable, run:
 
 ```bash
 echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip 
