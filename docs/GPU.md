@@ -82,7 +82,7 @@ torch.cuda.get_device_name()
 
 The last command should return `'Quadro RTX 6000'`.
 
-Again, as before, to make jupyter notebook executable, run:
+As before, to make a jupyter notebook executable, run:
 
 ```bash
 echo -e '#!/bin/bash\nunset XDG_RUNTIME_DIR\njupyter notebook --ip 
@@ -90,7 +90,7 @@ $(hostname -f) --no-browser' > ~/slurm/env/bin/notebook.sh
 chmod u+x ~/slurm/env/bin/notebook.sh
 ```
 
-now you can run using:
+now you can run executable  using:
 
 ```
 srun ~/slurm/env/bin/notebook.sh
