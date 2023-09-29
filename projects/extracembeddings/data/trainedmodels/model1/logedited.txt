@@ -1,0 +1,16 @@
+set terminal wxt
+set autoscale
+set size 1, 1
+unset log
+unset label
+set tics font "Times New Roman, 16"
+set bmargin 5
+set margin 15
+set yrange [0:0.02]
+set xrange [0:200000]
+set xlabel 'Time (s)' font "Times New Roman, 16" offset 0,0,0
+set ylabel 'Loss (eV)' font "Times New Roman, 16" offset 0,0,0
+set zlabel 'PC 3' font "Times New Roman, 16" offset 0,0,0
+set datafile separator ','
+plot "logedited.csv" using 1:2 with lines lc rgb "blue" title "training loss", \
+     "logedited.csv" using 1:3 with lines lc rgb "orange" title "validation loss"

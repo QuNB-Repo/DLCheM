@@ -1,0 +1,18 @@
+model1 -> qm9u0-100000-10000-128-50-6-50 
+
+trained on U0
+
+training datapoints - 100000
+validation datapoints - 10000
+
+atom_basis = 128
+n_filters = 128
+n_gaussians = 50
+n_interaction_blocks = 6
+cutoff = 50. Angstroms
+
+
+lr = 1e-2
+batch_size = 100
+Adam optimizer
+

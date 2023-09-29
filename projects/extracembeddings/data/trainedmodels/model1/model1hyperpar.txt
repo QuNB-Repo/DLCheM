@@ -1,0 +1,8 @@
+model1 -> qm9u0
+
+numtrain = 100000
+numval = 10000
+n_atom_basis = 128
+n_gaussian = 50
+n_interactions = 6
+cutoff = 50 
