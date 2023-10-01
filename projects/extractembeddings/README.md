@@ -1,1 +1,1 @@
-
+To use extractembeddings code you need a datset and a trained schnet model that has been saved with its model_state_dict(). We used QM9 dataset and pretrained our own model which has a saved model_state_dict() which can be found in the trainedmodels folder. This model of SchNet was trained on 
