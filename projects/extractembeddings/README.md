@@ -6,3 +6,9 @@ To use extractembeddings code you need a datset, we used QM9, which can be downl
 You also need a pre-trained schnet model that has been **checkpoint-saved** along with its **model_state_dict()**, it is really important to save the model_state_dict() if you are to train your own model. 
 
 We have a pre-trained schnet already (and model_state_dict() saved), uploaded and ready for use. However, because it was trained on schnetpack 0.3, it seems to only work on schnetpack 0.3, so that version has to be loaded.
+
+Below are the steps to load trained model's state dictionary, extract a layer, such as embedding layers or interaction layers, and perform the same analysis (dimension reduction and lineear discriminant analysis with functional-group-labelled embeddings)
+
+_Step 1) load trained model_
+
+
