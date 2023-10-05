@@ -37,6 +37,14 @@ This part of the code runs the qm9 dataset (but can be replaced with any db data
 It saves both the total embedding built (and intermediatte embedding), and the interaction residues that make up the final embedding. 
 
 
+_Step 5 _
+
+Dimension reduction with sklearn PCA/t-SNE
+
+_Step 6_
+
+linear discriminant analysis with sklearn 
+
 
 
 
