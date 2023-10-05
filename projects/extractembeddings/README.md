@@ -30,7 +30,13 @@ _Step 3) Extract embeddings from each layer in schnet_
 
 This step sets up a pandas dataframe output that will have the following headings:
 
-#embs0, #embs1, #embs2, #embs3, ...., #embs127,  
+#embs0, #embs1, #embs2, #embs3, ...., #embs127, molecule_index, element, x_coord, y_coord, z_coord, fg_label, fg_gnuplotmarker, fg_decimalcolor, layer, fg_key, fg_hexcolor
+
+This part of the code runs the qm9 dataset (but can be replaced with any db dataset using AtomsData from SchNet) through the model, while registering forward hook on initial embedding and interaction layers. The embedding layers can be calculated as emb1 = emb0 + int, where emb0 begins with the initiall "embedding" layer and int are the outputs of each "interaction" layer. 
+
+It saves both the total embedding built (and intermediatte embedding), and the interaction residues that make up the final embedding. 
+
+
 
 
 
