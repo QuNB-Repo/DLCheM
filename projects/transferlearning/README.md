@@ -19,7 +19,7 @@ _data/embslogS _ - contains the embeddings of 800 molecules along with their log
 
    Embeddings file
    the embeddings are the first 128 columns, embs0-embs127, 
-   the rest of the columns, 129-137, contain: molecule_index, element (C), x 
+   the rest of the columns, 129-137, contain: molecule_index, element, x 
    coord, y coord, z coord, fg label, fg gnuplotmarker, fg gnuplotcolor, layer 
    (5), and schnet predicted atomization energy 
 
