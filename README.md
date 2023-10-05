@@ -9,7 +9,6 @@ that SchNet learned in what we call "embedding vectors." 1) We found these vecto
 a notion of molecular similarity, and much more. 2) We also found that this representation is ideal to transfer learn and predict properties of totally new chemical properties (such as pKa, NMR, 
 solubility) using little data and very rudimentary statistical methods.
 
-
 Inside this directory there are two main projects:
 
 	1) extractembeddings - this code can extract embedding vectors, the representation of atom-in-molecules built by SchNet's graph convolutional neural network.  
