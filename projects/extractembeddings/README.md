@@ -37,12 +37,12 @@ This part of the code runs the qm9 dataset (but can be replaced with any db data
 It saves both the total embedding built (and intermediatte embedding), and the interaction residues that make up the final embedding. 
 
 
-_Step 5_ Dimension reduction with sklearn PCA/t-SNE
+_Step 5)_ Dimension reduction with sklearn PCA/t-SNE
 
   A) filter out the target element(s) for analysis and layer(s)
   B) run dimensionality reduction on the high-dimensional layers 
 
-_Step 6_ linear discriminant analysis with sklearn 
+_Step 6)_ linear discriminant analysis with sklearn 
 
   Simple code that uses the fg ldalabels the extract embeddings to classify them with linear boundaries
 
