@@ -15,7 +15,7 @@ _data/embspKa_ - contains the O-embeddings of our pKa dataset (curated from IUPA
    the rest of the columns, 129-133 contain the ldalabel, gnuplotmarker, 
    gnuplotcolor of the oxygen atom
 
-_data/embslogS _ - contains the embeddings of 800 molecules along with their logS solubility curated from the NP-MRD database found here: https://np-mrd.org/. 
+_data/embslogS_ - contains the embeddings of 800 molecules along with their logS solubility curated from the NP-MRD database found here: https://np-mrd.org/. 
 
    Embeddings file
    the embeddings are the first 128 columns, embs0-embs127, 
