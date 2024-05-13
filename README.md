@@ -13,6 +13,10 @@ The project is divided in three subprojects:
                                                   chemical reaction syntax, here we run reactions in a database to see what would the reactions look like in the latent space of a trained GNN model. This reveals that the latent space is organized based on reaction syntax, we can drive all reactants of a certain kind to their products with a single, constanct vector, for all the reactants. This is true for any reaction chosen. The algorithm in this project is able to to run any reactions in a database and analyze the embeddings of
     3) gcnn_latentspace_transferlearning        - This subproject shows the latent space of chemistry, given that it 
                                                   learns chemical logic, can be used to efficiently transfer learn and solve new problems in chemistry, such as modelling pKa, NMR, and the electron density! We show that pretrained latent spaces of GNN models can be used as inputs to new learning algorithms that are super efficient and require less chemical data. This is essential given that, for some problems, highly reliable chemical data is rare. This also is a test of completeness of GNN models, can they model ALL of chemistry, similar to how the wave function does in quantum chemistry? 
+    4) flow_batteries_bpy_genetic algorithm     - an application of genetic algorithms on bipyridine derivatives to 
+                                                  predict a bipyridine-like substitute that has better flow battery properties as a method of inverse molecular design. 
+
+    See README files within each subproject to learn more! 
 
 
 			      
