@@ -1,7 +1,8 @@
 # DLCheM - What is the chemical logic behing graph neural network (GNN) chemistry
 
 
-SchNet_latentspace         - code that extracts fully updated embedding feature vectors from schnet, which are representative of the latent space of the model
+SchNet_latentspace         - code that extracts fully updated embedding feature vectors from schnet, 
+                             which are representative of the latent space of the model
                              it also labels the code with functional group colors/markers and integers for classification.  
 
                             Inputs required:                     
@@ -26,7 +27,7 @@ label                      - code that labels QM9's atoms based on the chemical 
 
                                     A) autolabel code - finds each unique atom center configuraiton and gives it a unique label with colors and markers
 
-                                    B) manuallabel code - preset label of colors/markers for atomic configurations 
+                                    B) manuallabel code - preset label of colors/markers for atomic neighborhood configurations 
                             
                             see README in label directory for more on how each of these labels work and how to use this label code separately from SchNet's embedding extraction, and thus label any db dataset independently of latent space extraction, otherwise use the LABEL == True to allow embedding extraction to also label.
 
