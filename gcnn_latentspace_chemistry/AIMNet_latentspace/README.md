@@ -2,7 +2,7 @@
 
 
 AIMNet_latentspace         - code that extracts fully updated embedding feature vectors from pretrained AIMNet model, which are representative of the latent space of the trained GNN model. 
-                             NOTE that labels for the QM9 atom-centered functional groups can be obtained by running the analysis on SchNet first, where  in that code the labelling of atoms is already set with extraction of atom embeddings. Copy the labels after extraction atoms with SchNet and paste them in the resulting .csv here, OR incoporate the label of atoms along with extraction here (by copying the label code and working with it)
+                             NOTE that labels for the QM9 atom-centered functional groups can be obtained by running the analysis on SchNet first, where  in that code the labelling of atoms is already set with extraction of atom embeddings. Copy the labels after extraction atoms with SchNet and paste them in the resulting .csv here, OR incoporate the label of atoms along with extraction here (by copying the label code and incorporate it with embedding extraction, or just use that code separately on QM9 and copying the resulting label)
 
                             Inputs required:                     
                                 QM9_FILEPATH            - filepath where qm9 db database is being kept
