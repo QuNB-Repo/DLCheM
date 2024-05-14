@@ -14,7 +14,7 @@ We analyzed two different graph neural networks in chemsitry to arrive at the sa
     AIMNet_latentspace            - extracts the latent space of a pretrained AIMNet model
     SchNet_latentspace            - extracts the latent space of a pretrained SchNet model
     analysis_tools                - a set of analysis tools to analyze embedddings from either model
-                                    dimension reduciton, euclidean distance, classification methods... etc
+                                    dimension reduction, euclidean distance, classification methods... etc
 
 Please see README within each directory to find out more! 
 
