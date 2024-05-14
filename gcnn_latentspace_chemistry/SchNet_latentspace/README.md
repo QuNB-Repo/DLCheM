@@ -1,5 +1,6 @@
 # DLCheM - What is the chemical logic behing graph neural network (GNN) chemistry
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 SchNet_latentspace         - code that extracts fully updated embedding feature vectors from schnet, 
                              which are representative of the latent space of the model
@@ -22,13 +23,16 @@ SchNet_latentspace         - code that extracts fully updated embedding feature 
                                 SCRATCH_FILE                - a scratch file to write xyz and mol onto temporarily for labelling FG's
                                 ADD_HEADER                  - boolean to add a header to the output embedding csv file
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 label                      - code that labels QM9's atoms based on the chemical environment, a.k.a functional groupt 
                              around the atom. There are two ways of doing this: 
 
                                     A) autolabel code - finds each unique atom center configuraiton and gives it a unique label with colors and markers
 
                                     B) manuallabel code - preset label of colors/markers for atomic neighborhood configurations 
-          
+
+---------------------------------------------------------------------------------------------------------------------------------------------      
 
 Requirements: (please check to ensure all dependencies are met! make a conda environment separate for these dependencies if necessary)
     python 3.7
@@ -49,5 +53,5 @@ Requirements: (please check to ensure all dependencies are met! make a conda env
     pip install ipykernel
     ipython kernel install --user --name=env_name
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
