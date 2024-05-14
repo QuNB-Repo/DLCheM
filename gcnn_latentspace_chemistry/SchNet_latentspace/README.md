@@ -2,10 +2,12 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-SchNet_latentspace         - code that extracts fully updated embedding feature vectors from schnet, 
+embeddings_latentspace     - code that extracts fully updated embedding feature vectors from schnet, 
                              which are representative of the latent space of the model
                              it also labels the code with functional group colors/markers and integers for classification.  
 
+extractembs.ipynb          - jupyter notebook example that runs the code above
+                            
                             Inputs required:                     
                                 MODEL_FILEPATH              - where the pretrained schnet model is saved
                                 DB_FILEPATH                 - where the molecules db file for embedding extraction is saved

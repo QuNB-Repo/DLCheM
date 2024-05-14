@@ -7,8 +7,8 @@ from numpy import genfromtxt, savetxt
 
 from schnetpack import AtomsData
 
-from label.manuallabel2 import labeller
-from label.manuallabel2.utils import utils
+from label.manuallabel import labeller
+from label.manuallabel.utils import utils
 
 
 '''
@@ -17,7 +17,6 @@ Last Updated: 2024-03-08
 
 def extract_embs(QM9_TRUE,DB_FILEPATH, MODEL_FILEPATH,SAVE_FILEPATH,START,END,N_FEATURES,LAYERS,ELEMENTS=[1,6,7,8,9],AVAILABLE_PROPERTIES='N/A',LABEL=True,ADD_HEADER=True,RESTRICT_LABEL=False,ALLOWED_LABELS=[],INDICES_TO_LABEL=[]):
     '''
-    
     Extracting & labeling embeddings of QM9 using a pretrained SchNet model
     and indices list for each molecule (a list of lists) that point to which atoms to extract
 
