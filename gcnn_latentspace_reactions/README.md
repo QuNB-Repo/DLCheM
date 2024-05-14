@@ -22,28 +22,47 @@ runrxns                                     - code that runs reactions across an
 
 rxns_latentspace                            - jupyter notebook example of how to analyze reactions in the embedding space
                                             INPUTS required:
-                                                rxn_centers          - choosing reaction centers from dictionary of reaction sites (or define own)
-                                                leaving_atoms        - choosing leaving groups atoms from dictionary of leaving groups (or define own)
-                                                attach_group         - choosing fg to attach from dictionary of fg to build
+                                                rxn_centers          - choosing reaction centers from dictionary of 
+                                                reaction sites (or define own)
+
+                                                leaving_atoms        - choosing leaving groups atoms from dictionary 
+                                                of leaving groups (or define own)
+
+                                                attach_group         - choosing fg to attach from dictionary of fg to 
+                                                build
                                                 attach_group_bonds   - choosing the corresponding fg bond to build 
                                                 attach_group_numb
-                                                _atomsbonds          - the corresponding additional number of atoms/bonds due to the attaching group
+                                                _atomsbonds          - the corresponding additional number of atoms/
+                                                bonds due to the attaching group
                                                 remove_bonds_from_
-                                                rxnsite              - choosing to remove a double bond from reaction site if required
+                                                rxnsite              - choosing to remove a double bond from reaction 
+                                                site if required
                                                 add_bonds_to_
-                                                rxnsite              - choosing to add double bond to reaction site if required
-                                                DATASET_FILEPATH     - the db file that has been labelled with autolabel
-                                                QM9_BOOL             - a boolean depENDing on whether QM9.db is being used because we
+                                                rxnsite              - choosing to add double bond to reaction site if 
+                                                required
+                                                
+                                                DATASET_FILEPATH     - the db file that has been labelled with 
+                                                autolabel
+                                                QM9_BOOL             - a boolean depENDing on whether QM9.db is being 
+                                                used because we
                                                                     load all the properties using QM9 method instead
-                                                                    of AtomsData for any other db dataset (more efficient)
-                                                LABELS_FILEPATH      - specify the filepath that holds the atomic center structure labels at a sufficient depth
-                                                                    for the reaction center (usually a depth of 5 is sufficient for most reaction centers) 
-                                                DEPTH                - depth of structure label in label filepath specified
+                                                                    of AtomsData for any other db dataset (more 
+                                                                    efficient)
+                                                LABELS_FILEPATH      - specify the filepath that holds the atomic 
+                                                center structure labels at a sufficient depth
+                                                                    for the reaction center (usually a depth of 5 is 
+                                                                    sufficient for most reaction centers) 
+                                                DEPTH                - depth of structure label in label filepath 
+                                                specified
                                                 MOLECULES_RANGE      - range of molecules to scan for reactions
                                                 REACT_FILEPATH       - filepath that will contain reactants 
-                                                REMOVELG_FILEPATH    - filepath that will contain reactants without LG (without optimization)
-                                                PROD_FILEPATH        - filepath that will contain products with MMFF94 optimization 
-                                                AVAILABLE_PROPERTIES - making the db requires setting an available property even if property is missing
+                                                REMOVELG_FILEPATH    - filepath that will contain reactants without LG 
+                                                (without optimization)
+                                                PROD_FILEPATH        - filepath that will contain products with MMFF94 
+                                                optimization 
+                                                
+                                                AVAILABLE_PROPERTIES - making the db requires setting an available 
+                                                property even if property is missing
                                                                     this can be anything as filler, long as you remember what the filler database property name is so that it can be accessed
 
 The code is well-annotated and explains how to use it at every step, so feel free to look at the annotated jupyter  notebook for further explanations
