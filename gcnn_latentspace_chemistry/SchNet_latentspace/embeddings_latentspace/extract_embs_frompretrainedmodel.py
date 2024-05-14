@@ -7,8 +7,8 @@ from numpy import genfromtxt, savetxt
 
 from schnetpack import AtomsData
 
-from label.manuallabel2 import labeller
-from label.manuallabel2.utils import utils
+from label.manuallabel import labeller
+from label.manuallabel.utils import utils
 
 
 '''

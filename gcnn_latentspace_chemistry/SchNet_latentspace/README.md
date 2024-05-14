@@ -21,10 +21,14 @@ SchNet_latentspace         - code that extracts fully updated embedding feature 
                                 SCRATCH_FILE                - a scratch file to write xyz and mol onto temporarily for labelling FG's
                                 ADD_HEADER                  - boolean to add a header to the output embedding csv file
 
-label                      - code that labels QM9's atoms based on the chemical environment, a.k.a functional group around the atom. There are two ways of doing this, 
-                             there is an autolabel code, that finds each unique atom centers and gives it a unique label, with colors and markers. there is the manual label code
-                             with preset atomic environment labels for when found on an atom, to label with. 
+label                      - code that labels QM9's atoms based on the chemical environment, a.k.a functional groupt 
+                             around the atom. There are two ways of doing this: 
 
+                                    A) autolabel code - finds each unique atom center configuraiton and gives it a unique label with colors and markers
+
+                                    B) manuallabel code - preset label of colors/markers for atomic configurations 
+                            
+                            see README in label directory for more on how each of these labels work and how to use this label code separately from SchNet's embedding extraction, and thus label any db dataset independently of latent space extraction, otherwise use the LABEL == True to allow embedding extraction to also label.
 
 Requirements: (please check to ensure all dependencies are met! make a conda environment separate for these dependencies if necessary)
     python 3.7
