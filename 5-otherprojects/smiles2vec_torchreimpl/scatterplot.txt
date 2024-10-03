@@ -1,0 +1,18 @@
+set terminal svg size 1500,1000 font "Times New Roman, 40"
+#set terminal svg size 1000,666 font "Times New Roman, 40"
+set output "out.svg"
+set autoscale
+set size 1,1
+unset log
+unset label
+
+#set lmargin 18
+#set rmargin 5
+#set tmargin 2
+#set bmargin 8
+
+#set xrange [0:200]
+set xlabel 'PC 1'offset 0,0,0
+set ylabel 'PC 2' offset 0,0,0
+set datafile separator ','
+plot 'conv1embspca.csv' using 1:2:195:196 with points lc rgb variable pt variable ps 0.5 notitle
