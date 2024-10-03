@@ -97,3 +97,4 @@ python 3.7
 pandas==1.1.5
 numpy==1.21.5
 torch==1.9.0
+scikit-learn==1.0.2

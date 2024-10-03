@@ -12,14 +12,14 @@ conda install -c conda-forge dscribe=1.2.2
 conda install -c conda-forge soaplite=1.0.3
 
 #for schnet
-pip install schnetpack==1.0.0 (/home/amerelsamman/anaconda3/envs/dlchem/bin/pip install schnetpack==1.0.0)
+pip install schnetpack==1.0.0
 #NOTE FOR LOADING MODEL 1, YOU NEED SCHNETPACK 0.3!!! 
 #pip install schnetpack==0.3
 
 
 #basics
-pip install numpy==1.21.5 (/home/amerelsamman/anaconda3/envs/dlchem/bin/pip install numpy==1.21.5)
-pip install pandas==1.1.5 (/home/amerelsamman/anaconda3/envs/dlchem/bin/pip install pandas==1.15)
+pip install numpy==1.21.5 
+pip install pandas==1.1.5 
 pip install ipython
 pip install ipykernel
 
