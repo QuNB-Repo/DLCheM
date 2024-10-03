@@ -1,4 +1,4 @@
-# Latent Space Reactions in Deep Learning Models
+# Latent Space Reactions Transformations in GNN models
 ---
 
 ## gcnn_latentspace_reactions
