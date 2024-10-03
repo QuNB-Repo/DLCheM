@@ -10,6 +10,7 @@ from schnetpack import AtomsData
 from label.manuallabel import labeller
 from label.manuallabel.utils import utils
 
+np.random.seed(44)
 
 '''
 Last Updated: 2024-03-08

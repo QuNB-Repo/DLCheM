@@ -79,13 +79,14 @@ See the README files within each subproject to learn more!
 
 5) Other projects: folder contains other projects and endeavors! Which are:
 
-  geneticalgorithms_batteries           
-   - Application of genetic algorithms on bipyridine derivatives to predict 
-     a bipyridine-like substitute with improved flow battery properties. This 
-     study is as an example of successful inverse molecular design.
+       geneticalgorithms_batteries           
+         - Application of genetic algorithms on bipyridine derivatives to predict 
+           a bipyridine-like substitute with improved flow battery properties. This 
+           study is as an example of successful inverse molecular design.
 
-  rnn_onsmiles                         
-   - a reimplementation of smiles2vec to analyze the latent space of an RNN-type model
+       rnn_onsmiles                         
+        - CNNonSMILES to analyze the latent space of different models based on string 
+          based representations
 
 
   Again, see the README files within each subproject to learn more!

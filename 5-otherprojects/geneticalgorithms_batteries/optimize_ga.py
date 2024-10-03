@@ -2,7 +2,10 @@ import os
 from rdkit import Chem
 from rdkit.Chem import AllChem
 import fileinput
+import numpy as np
 
+# Set a seed for reproducibility
+np.random.seed(42)
 
 def optimize_GA_mol(MOLECULE_NUMBER,MOLECULES_FILEPATH,OUTPUT_FILEPATH,INP_CONVERTED_FILEPATH,GAMESS_FILEPATH):
     '''

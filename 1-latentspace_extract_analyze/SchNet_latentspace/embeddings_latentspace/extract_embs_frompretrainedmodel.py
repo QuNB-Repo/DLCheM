@@ -11,6 +11,10 @@ from label.manuallabel import labeller
 from label.manuallabel.utils import utils
 
 
+# Set a seed for reproducibility
+np.random.seed(42)
+
+
 '''
 Last Updated: 2024-03-08
 '''

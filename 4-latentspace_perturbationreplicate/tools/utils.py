@@ -2,6 +2,9 @@ import numpy as np
 import fileinput
 import os
 
+# Set a seed for reproducibility
+np.random.seed(42)
+
 def find_nextdoor_neighbors(MOL_FILEPATH,ATOMIDX,NUMBER_ATOMS):
         ''' 
         looks up an atom's direct neighbors using the mol file and the atom's index

@@ -13,6 +13,8 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import joblib
 
+np.random.seed(42)
+
 class pertcorrections_neuralnet(nn.Module):
     '''
     simple feedforward neural network which can also reduce to linear regression as well.

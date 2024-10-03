@@ -6,6 +6,9 @@ from schnetpack.datasets import QM9
 import fileinput
 import os
 
+# Set a seed for reproducibility
+np.random.seed(42)
+
 def atomic_number_to_element_symbol(atomic_id):
     element_symbols = {
             1: "H",
