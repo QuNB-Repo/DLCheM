@@ -17,5 +17,5 @@ COPY . /app
 EXPOSE 5000
 
 # Command to run your application (adjust to your entrypoint script)
-CMD ["python", "app.py"]
+CMD ["tail","-f","/dev/null"]
 
